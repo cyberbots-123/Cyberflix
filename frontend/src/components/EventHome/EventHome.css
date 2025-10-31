@@ -1,0 +1,134 @@
+/* Hero section */
+.event-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 80px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Floating Image Center */
+.floating-image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float 4s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.floating-image {
+  width: 150px;
+  max-width: 60vw; /* Scales for smaller screens */
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-20px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0px);
+  }
+}
+
+/* Glassmorphism card */
+.event-card {
+  border-radius: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  background: transparent !important; /* Remove background color */
+  backdrop-filter: none !important;   /* Remove blur effect */
+  -webkit-backdrop-filter: none !important;
+}
+
+
+/* Logo */
+.event-logo {
+  width: 150px;
+  max-width: 30vw;
+  filter: drop-shadow(0 0 6px rgba(0, 229, 255, 0.7));
+}
+
+/* Gradient Title */
+/* Gradient Title */
+.event-title {
+  font-family: 'Asimovian', sans-serif;  /* ✅ Apply Asimovian font */
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00e5ff, #ff4081);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+
+/* Highlight text */
+.highlight {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+/* Register button */
+.register-btn {
+  border: 2px solid #00e5ff;
+  color: #00e5ff !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #00e5ff;
+  color: #000 !important;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+}
+
+/* -------------------- RESPONSIVENESS -------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .event-title {
+    font-size: 2.2rem;
+  }
+
+  .floating-image {
+    width: 160px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .event-section {
+    min-height: auto;
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .floating-image {
+    width: 120px;
+    max-width: 70vw;
+  }
+
+  .event-logo {
+    width: 90px;
+  }
+
+  .event-title {
+    font-size: 1.8rem;
+  }
+
+  .register-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

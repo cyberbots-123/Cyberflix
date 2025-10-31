@@ -1,0 +1,147 @@
+/* General Container */
+.home02 {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+/* Header Section */
+.home02-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home02-header h1 {
+  font-size: 2.8rem;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.home02-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Grid Layout */
+.home02-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.home02-text {
+  line-height: 1.8;
+}
+
+.home02-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.home02-features {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home02-features li {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  /* background: #0056b3; */
+  background: blue;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+}
+
+/* Image Section */
+.home02-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .home02-header h1 {
+    font-size: 3.2rem;
+  }
+
+  .home02-header p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .home02-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home02-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .home02-header p {
+    font-size: 1.2rem;
+  }
+
+  .home02-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Small screens (smartphones) */
+@media (max-width: 768px) {
+  .home02-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home02-header h1 {
+    font-size: 2rem;
+  }
+
+  .home02-header p {
+    font-size: 1rem;
+  }
+
+  .home02-text p {
+    font-size: 0.9rem;
+  }
+
+  .home02-features li {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Extra small screens (small smartphones) */
+@media (max-width: 480px) {
+  .home02-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .home02-header p {
+    font-size: 0.9rem;
+  }
+
+  .home02-text p {
+    font-size: 0.8rem;
+  }
+
+  .home02-features li {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .home02 {
+    padding: 20px;
+  }
+}

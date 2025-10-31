@@ -1,0 +1,47 @@
+.custom-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Primary Button Style */
+.custom-btn-primary {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn-primary:hover {
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Secondary Button Style */
+.custom-btn-secondary {
+  background: linear-gradient(90deg, #ff7f50, #ff4500);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn-secondary:hover {
+  background: linear-gradient(90deg, #ff4500, #c72c00);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Active and Focus States */
+.custom-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:focus {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+

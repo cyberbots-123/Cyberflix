@@ -1,0 +1,10 @@
+.card:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  

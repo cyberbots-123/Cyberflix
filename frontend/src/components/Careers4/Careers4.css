@@ -1,0 +1,124 @@
+/* Container Styling */
+.careers-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.careers-container h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.careers-container .tagline {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+/* Job List Grid */
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Job Card Styling */
+.job-card {
+  background: linear-gradient(to bottom, #ffffff, #f6f6f6);
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.job-card h4 {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.job-card p:last-of-type {
+  font-weight: bold;
+}
+
+/* Apply Button */
+.job-card button.apply-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.job-card button.apply-button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .careers-container h2 {
+    font-size: 28px;
+  }
+
+  .careers-container .tagline {
+    font-size: 16px;
+  }
+
+  .job-card {
+    padding: 15px;
+  }
+
+  .job-card h4 {
+    font-size: 18px;
+  }
+
+  .job-card p {
+    font-size: 13px;
+  }
+
+  .job-card button.apply-button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-container h2 {
+    font-size: 24px;
+  }
+
+  .job-card {
+    padding: 10px;
+  }
+
+  .job-card h4 {
+    font-size: 16px;
+  }
+
+  .job-card p {
+    font-size: 12px;
+  }
+
+  .job-card button.apply-button {
+    padding: 6px 12px;
+  }
+}

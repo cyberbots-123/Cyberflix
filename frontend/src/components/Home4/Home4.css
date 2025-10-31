@@ -1,0 +1,142 @@
+/* Main Container */
+.home4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.home4-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home4-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Content Section */
+.home4-content {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+  color: #333;
+}
+
+.home4-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2b2d42;
+  position: relative;
+}
+
+.home4-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #00a8e8;
+  margin-top: 5px;
+}
+
+.home4-subheading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.home4-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #6c757d;
+}
+
+.home4-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home4-list li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  position: relative;
+  color: #495057;
+  display: flex;
+  align-items: center;
+}
+
+.home4-list li::before {
+  content: "✔";
+  color: #00a8e8;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Statistics Cards Section */
+.home4-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.stat-card {
+  background: #f0f4f8;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 20px #d6d9df, -10px -10px 20px #ffffff;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b2d42;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.stat-description {
+  font-size: 1.1rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home4-content {
+    text-align: center;
+  }
+
+  .home4-heading {
+    font-size: 2rem;
+  }
+
+  .home4-subheading {
+    font-size: 1.2rem;
+  }
+
+  .home4-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

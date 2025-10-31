@@ -1,0 +1,115 @@
+/* EventRegistration.css */
+
+/* Main container */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6c63ff 0%, #3f3d56 100%);
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card styling */
+.registration-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.registration-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card heading */
+.registration-card h2 {
+  color: #6c63ff;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* Form labels */
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input fields and selects */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+  outline: none;
+}
+
+/* Disabled fee input */
+.form-control[disabled] {
+  background-color: #f3f3f3;
+  font-weight: 600;
+  color: #6c63ff;
+  text-align: center;
+  cursor: not-allowed;
+}
+
+/* Error styling */
+.is-invalid {
+  border-color: #ff4d4d !important;
+}
+
+.invalid-feedback {
+  font-size: 12px;
+  color: #ff4d4d;
+}
+
+/* Submit button */
+.submit-btn {
+  background: #6c63ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #5548c8;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Row spacing */
+.row {
+  margin-bottom: 15px;
+}
+
+/* Checkbox styling */
+.form-check-label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .registration-card {
+    padding: 20px;
+  }
+
+  .registration-card h2 {
+    font-size: 24px;
+  }
+}

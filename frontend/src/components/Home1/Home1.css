@@ -1,0 +1,216 @@
+/* Video background */
+.home1_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Main Container */
+.home1_container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Overlay */
+.home1_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Slide content */
+.home1_slide {
+  max-width: 80%;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.home1_slide h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.home1_slide p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.home1_buttons {
+  margin-top: 15px;
+}
+
+.home1_buttons .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* Arrows */
+.home1_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.home1_arrow:hover {
+  opacity: 0.7;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* Dots */
+.home1_dots {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.dot.active {
+  opacity: 1;
+  background: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home1_slide h1 {
+    font-size: 1.8rem;
+  }
+
+  .home1_slide p {
+    font-size: 1rem;
+  }
+
+  .home1_buttons .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .home1_arrow {
+    font-size: 1.5rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home1_slide h1 {
+    font-size: 1.5rem;
+  }
+
+  .home1_slide p {
+    font-size: 0.9rem;
+  }
+
+  .home1_buttons .btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+
+  .home1_arrow {
+    font-size: 1.2rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Button Colors */
+.custom-blue-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.custom-blue-btn:hover {
+  background-color: blue;
+  color: white;
+}
+
+.custom-blue-outline-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.custom-blue-outline-btn:hover {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+}
+
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+
+
+.home1_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+

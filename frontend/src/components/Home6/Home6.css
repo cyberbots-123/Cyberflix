@@ -1,0 +1,125 @@
+/* Main Container */
+.home6-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header Section */
+.home6-header {
+  margin-bottom: 30px;
+}
+
+.home6-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b2d42;
+}
+
+.home6-subtitle {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.home6-button {
+  padding: 10px 20px;
+  background-color: #00a8e8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home6-button:hover {
+  background-color: #007bb8;
+}
+
+/* Cards Section */
+.home6-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.home6-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Remove Hover Effect */
+.home6-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Card Image */
+.home6-card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Card Content */
+.home6-card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.home6-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2b2d42;
+  margin-bottom: 10px;
+}
+
+.home6-card-description {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.home6-card-button {
+  padding: 10px 15px;
+  background-color: #00a8e8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home6-card-button:hover {
+  background-color: #007bb8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Tablet Mode: Two cards per row */
+  .home6-cards {
+    grid-template-columns: repeat(2, 1fr); /* Display two cards per row */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile Mode: One card per row */
+  .home6-cards {
+    grid-template-columns: 1fr; /* Display one card per row */
+    gap: 15px;
+  }
+}

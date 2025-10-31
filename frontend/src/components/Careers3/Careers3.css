@@ -1,0 +1,129 @@
+.career-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; /* Space between text and image */
+    background-color: #fce4ec; /* Baby pink background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+  }
+  
+  .career-text {
+    flex: 1;
+    max-width: 60%;
+  }
+  
+  .career-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .career-text p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .career-text p:nth-child(2) {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .career-text p:nth-child(3) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .career-text button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .career-text button:hover {
+    background-color: #0056b3;
+  }
+  
+  .career-text p svg {
+    margin-right: 10px;
+    color: #007BFF;
+    vertical-align: middle;
+  }
+  
+  .career-image {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .career-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .career-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .career-text {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  
+    .career-image {
+      max-width: 80%;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .career-text p {
+      font-size: 14px;
+    }
+  
+    .career-text p:nth-child(2) {
+      font-size: 20px;
+    }
+  
+    .career-text button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .career-container {
+      padding: 10px;
+    }
+  
+    .career-text p {
+      font-size: 12px;
+    }
+  
+    .career-text p:nth-child(2) {
+      font-size: 18px;
+    }
+  
+    .career-text button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .career-image img {
+      border-radius: 5px;
+    }
+  }
+  

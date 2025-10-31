@@ -1,0 +1,30 @@
+.certificate-image {
+  max-width: 40%;  /* Ensures it scales within its container */
+  height: auto;      /* Maintains aspect ratio */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensuring container is responsive */
+@media (max-width: 768px) {
+  .certificate-section {
+    padding: 20px; /* Adds padding for smaller screens */
+  }
+
+  .certificate-image {
+    max-width: 90%; /* Prevents full width on small screens */
+  }
+}
+
+.enrollment-section {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+.btn-warning {
+  transition: all 0.3s ease-in-out;
+}
+.btn-warning:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}

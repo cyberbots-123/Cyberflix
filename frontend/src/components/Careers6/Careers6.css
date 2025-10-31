@@ -1,0 +1,148 @@
+/* Base Container Styling */
+.careers-containerc6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f4f4f9;
+  }
+  
+  /* Left Side: Content Styling */
+  .careers-contentc6 {
+    flex: 1;
+    max-width: 55%;
+    text-align: left;
+    color: #333;
+  }
+  
+  .benefits-titlec6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .main-headingc6 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 15px;
+  }
+  
+  .sub-headingc6 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .descriptionc6 {
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Benefit Items Styling */
+  .benefit-itemc6 summary {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .benefit-itemc6 details {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #555;
+    padding-left: 20px;
+  }
+  
+  /* Right Side: Image Styling */
+  .careers-imagec6 {
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  .careers-imagec6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and Medium Screens (Max width: 992px) */
+  @media (max-width: 992px) {
+    .careers-containerc6 {
+      gap: 20px; /* Reduce gap */
+      padding: 30px;
+    }
+  
+    .careers-contentc6 {
+      text-align: center; /* Center-align text for tablets */
+    }
+  
+    .main-headingc6 {
+      font-size: 22px;
+    }
+  
+    .descriptionc6 {
+      font-size: 14px;
+    }
+  }
+  
+  /* Small Tablets and Large Mobiles (Max width: 768px) */
+  @media (max-width: 768px) {
+    .careers-containerc6 {
+      flex-direction: column; /* Stack content and image vertically */
+      padding: 20px;
+    }
+  
+    .careers-contentc6,
+    .careers-imagec6 {
+      max-width: 100%; /* Full width */
+    }
+  
+    .main-headingc6 {
+      font-size: 20px;
+    }
+  
+    .descriptionc6 {
+      font-size: 13px;
+    }
+  }
+  
+  /* Small Mobiles (Max width: 480px) */
+  @media (max-width: 480px) {
+    .benefits-titlec6 {
+      font-size: 16px;
+    }
+  
+    .main-headingc6 {
+      font-size: 18px;
+    }
+  
+    .sub-headingc6 {
+      font-size: 14px;
+    }
+  
+    .descriptionc6 {
+      font-size: 12px;
+    }
+  
+    .benefit-itemc6 summary {
+      font-size: 14px;
+    }
+  
+    .benefit-itemc6 details {
+      font-size: 12px;
+    }
+  }
+  

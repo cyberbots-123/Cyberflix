@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.haze-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fb;
+}
+
+.haze-left {
+  flex: 1;
+  background: linear-gradient(135deg, #7d9fff, #bfcaff);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.haze-left h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.haze-left p {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 300px;
+}
+
+.haze-image {
+  max-width: 300px;
+}
+
+.haze-right {
+  flex: 1;
+  background: white;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  color: #999;
+}
+
+.tab-btn.active {
+  color: #333;
+  border-color: #7d9fff;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.haze-form .input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.haze-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.haze-form input {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+.haze-form input:focus {
+  border-color: #7d9fff;
+  outline: none;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.forgot-link {
+  color: #7d9fff;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7d9fff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #648eff;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link span {
+  color: #7d9fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.signup-link span:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .haze-container {
+    flex-direction: column;
+  }
+
+  .haze-left,
+  .haze-right {
+    flex: none;
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .haze-left {
+    order: 2;
+  }
+
+  .haze-right {
+    order: 1;
+  }
+
+  .auth-tabs {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+.haze-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8f9fa;
+}
+
+.haze-left, .haze-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.haze-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: lightgray;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #0d6efd;
+  color: white;
+}
+
+.haze-form {
+  margin-top: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+}

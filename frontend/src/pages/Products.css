@@ -1,0 +1,381 @@
+/* ========== Container & Typography ========== */
+.products-container {
+  padding: 40px 20px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* ========== Category Buttons ========== */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.category-button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.category-button:hover,
+.category-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* ========== Search Bar ========== */
+.search-bar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* ========== Product Grid ========== */
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* wider cards */
+  gap: 24px;
+}
+
+.component-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  min-height: 320px;
+}
+
+.component-card:hover {
+  transform: translateY(-4px);
+}
+
+.component-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+.component-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 14px 0 8px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.component-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.component-card small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ========== Modal ========== */
+.fullscreen-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.fullscreen-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* ========== Modal Close Button ========== */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  z-index: 1001;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+/* ========== Modal Content ========== */
+.modal-body {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.modal-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.modal-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ========== Modal Info ========== */
+.modal-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.modal-price-tag {
+  font-size: 1rem;
+  color: #555;
+}
+
+.modal-price-tag span {
+  font-size: 1.5rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* ========== Spec List ========== */
+.modal-spec-list h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.modal-spec-list ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.modal-spec-list li {
+  margin-bottom: 4px;
+}
+
+/* ========== Quantity Selector ========== */
+.quantity-selector h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.qty-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: background 0.2s;
+}
+
+.qty-btn:hover {
+  background: #0056b3;
+}
+
+/* ========== Add to Cart ========== */
+.add-to-cart-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background: #218838;
+}
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .fullscreen-modal-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-title {
+    font-size: 1.4rem;
+  }
+
+  .modal-price-tag span {
+    font-size: 1.2rem;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 12px;
+    font-size: 1.4rem;
+  }
+}
+/* ========== Pagination ========== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border: 1px solid #007bff;
+  background: #fff;
+  color: #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.page-btn.active {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+/* ========== Fullscreen Banner ========== */
+.full-screen-banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url('../assets/Compbg.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+/* Optional: Overlay for darkening the background */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.banner-content {
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}

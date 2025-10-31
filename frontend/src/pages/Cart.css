@@ -1,0 +1,30 @@
+.btn-plain-rect {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 1.5px solid #000 !important;
+  border-radius: 4px !important; /* Slight rounding for a cleaner look */
+  padding: 6px 14px !important;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.btn-plain-rect:hover,
+.btn-plain-rect:focus,
+.btn-plain-rect:active {
+  background-color: transparent !important;
+  color: #000 !important;
+  border-color: #000 !important;
+  box-shadow: none !important;
+}
+
+.btn-plain-rect.btn-sm {
+  padding: 4px 10px !important;
+  font-size: 13px;
+}

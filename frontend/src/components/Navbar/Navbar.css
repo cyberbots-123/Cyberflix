@@ -1,0 +1,329 @@
+/* Main navbar container styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #333; /* Dark background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif; /* Clean modern font */
+  border-radius: 8px;
+}
+
+/* Navbar changes when scrolled */
+.navbar.scrolled {
+  background-color: #222; /* Darker shade when scrolled */
+}
+
+/* Logo styling */
+.nav_logo {
+  height: 60px;
+  /* width: 200px; */
+  cursor: pointer;
+  /* transition: transform 0.3s ease; */
+}
+
+
+
+/* Navbar items container */
+.nav_items {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Spacing between items */
+}
+
+.nav_items ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px; /* Spacing between links */
+}
+
+.nav_items li {
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav_items li:hover {
+  color: #ffa500; /* Orange color on hover */
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Light background for dropdown */
+  border-radius: 8px;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  color: #333;
+  font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+  color: #ffa500; /* Orange text on hover */
+}
+
+/* Show dropdown when hovering over the parent 'li' (dropdown) */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hamburger menu button */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+.navbar-toggler-icon {
+  background-color: #f1f1f1; /* Light color for the toggle icon */
+}
+
+/* New Login / Sign Up button design */
+.btn-outline-primary {
+  background-color: blue !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: blue; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight grow effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  color: #ffffff;
+}
+
+/* Focused state for button */
+.btn-outline-primary:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav_items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for mobile */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 80px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .nav_items.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav_items ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .auth_buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.custom-btn {
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-btn:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Frosted glass modal card */
+.glassmorphism-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Input with icon */
+.form-control.with-icon {
+  padding-left: 2.5rem;
+  border-radius: 50px;
+  height: 45px;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.form-control.with-icon:focus {
+  border-color: #0d6efd;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.5);
+}
+
+/* Icon inside input */
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #555;
+  pointer-events: none;
+}
+
+/* Tab buttons */
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 5px;
+  color: #000;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Hover buttons */
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* ⚡ Cyber Neon Event Button */
+.event-glow-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #00eaff !important;
+  border: 2px solid #00eaff;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.4),
+              inset 0 0 10px rgba(0, 234, 255, 0.2);
+  backdrop-filter: blur(8px);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* 💫 Hover — glowing ring + inner pulse */
+.event-glow-btn:hover {
+  color: #fff !important;
+  background: radial-gradient(circle at 30% 30%, #00eaff 0%, #0066ff 100%);
+  box-shadow: 0 0 25px #00eaff, 0 0 60px #0066ff;
+  transform: scale(1.08);
+}
+
+/* ✨ Moving neon edge */
+.event-glow-btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: linear-gradient(45deg, #00eaff, #007bff, #ff00ff, #00eaff);
+  border-radius: 50px;
+  z-index: -1;
+  background-size: 400%;
+  filter: blur(6px);
+  opacity: 0.7;
+  animation: neonFlow 6s linear infinite;
+}
+
+/* 🌀 Glowing gradient animation */
+@keyframes neonFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🌙 Subtle breathing animation */
+.event-glow-btn {
+  animation: softPulse 3s ease-in-out infinite;
+}
+
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(0, 234, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 22px rgba(0, 234, 255, 0.8);
+  }
+}

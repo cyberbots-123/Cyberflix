@@ -1,0 +1,83 @@
+.about2-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .about2-container h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, Blue, #ff0080); /* Blue to pink */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: left;
+  }
+  
+  .about2-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+  .about2-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about2-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #444;
+  }
+  
+  .about2-content img {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about2-extra-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+    text-align: left;
+  }
+  
+  .about2-extra-section h1 {
+    flex: 1;
+    min-width: 300px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    background: linear-gradient(90deg, #007cf0, #ff0080); /* Blue to Pink */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+  }
+  
+  .about2-extra-section p {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+  }
+  
