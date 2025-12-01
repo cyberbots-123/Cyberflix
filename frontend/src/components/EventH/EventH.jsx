@@ -21,11 +21,11 @@ const EventH = () => {
         data-aos="fade-right"
         data-aos-delay="2000"
       >
-        <img
+        {/* <img
           src={assets.Word}
           alt="Floating Logo"
           className="floating-image"
-        />
+        /> */}
       </div>
 
       <div className="container">
@@ -47,7 +47,7 @@ const EventH = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              Cyberflix 2025
+              Cyberflix 2026
             </h1>
             <p
               className="mb-4"

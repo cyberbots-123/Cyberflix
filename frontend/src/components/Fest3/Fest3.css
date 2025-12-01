@@ -1,0 +1,177 @@
+/* ==========================================
+   FEST3 — Comic Adventure Theme (Unified)
+   ========================================== */
+
+:root {
+  --primary-red: #FF3D3D;
+  --primary-yellow: #FFE8B3;
+  --dark-navy: #0A2342;
+  --soft-peach: #FFD1D1;
+  --sky-blue: #C9E4FF;
+}
+
+/* Section Wrapper (now full width) */
+.fest3-section {
+  width: 100%;
+  padding: 40px 16px;
+  position: relative;
+  background: var(--primary-yellow);
+  overflow: hidden;
+}
+
+/* Floating Shapes */
+.floating-shape {
+  position: absolute;
+  opacity: 0.7;
+  z-index: 0;
+  animation: float-move 7s infinite ease-in-out;
+}
+
+.floating-shape.circle {
+  border-radius: 50%;
+}
+
+.floating-shape.square {
+  border-radius: 6px;
+}
+
+.floating-shape.triangle {
+  width: 0 !important;
+  height: 0 !important;
+  border-left: 0.6em solid transparent;
+  border-right: 0.6em solid transparent;
+  border-bottom: 1em solid var(--primary-red);
+}
+
+/* Keyframes */
+@keyframes float-move {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0.5; }
+  50% { transform: translateY(-40px) rotate(180deg); opacity: 1; }
+  100% { transform: translateY(0px) rotate(360deg); opacity: 0.5; }
+}
+
+/* Grade Tabs */
+.fest3-grade-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.fest3-tab {
+  padding: 12px 26px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-navy);
+  border-radius: 40px;
+  border: 3px solid var(--dark-navy);
+  background: var(--soft-peach);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 0 var(--dark-navy);
+}
+
+.fest3-tab.active,
+.fest3-tab:hover {
+  background: var(--primary-red);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 0 var(--dark-navy);
+}
+
+/* Cards Container */
+.fest3-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Card */
+.fest3-card {
+  display: flex;
+  width: 100%;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--sky-blue);
+  border: 4px solid var(--dark-navy);
+  box-shadow: 6px 6px 0 var(--dark-navy);
+  transition: 0.4s ease;
+}
+
+.fest3-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 10px 10px 0 var(--dark-navy);
+}
+
+/* Card Image */
+.fest3-card-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-right: 4px solid var(--dark-navy);
+}
+
+.fest3-card-content {
+  width: 60%;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title */
+.fest3-card-content h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary-red);
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 0 var(--dark-navy);
+}
+
+/* Description */
+.fest3-card-content p {
+  font-size: 1rem;
+  color: var(--dark-navy);
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+
+/* View Button */
+.fest3-register-btn {
+  background: var(--primary-red);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 3px solid var(--dark-navy);
+  box-shadow: 4px 4px 0 var(--dark-navy);
+  transition: 0.3s ease;
+  width: fit-content;
+}
+
+.fest3-register-btn:hover {
+  transform: translateY(-3px);
+  background: var(--dark-navy);
+  color: var(--primary-yellow);
+}
+
+/* Mobile Fixes */
+@media (max-width: 900px) {
+  .fest3-card {
+    flex-direction: column;
+  }
+  .fest3-card-image {
+    width: 100%;
+    border-right: none;
+    border-bottom: 4px solid var(--dark-navy);
+  }
+  .fest3-card-content {
+    width: 100%;
+  }
+}

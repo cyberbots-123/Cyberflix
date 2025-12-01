@@ -97,6 +97,26 @@ import EventHandbook from "./EventHandbook.pdf"
 import Kakashi from "./Kakashi.png"
 import DragonVaultBot from "./DragonVaultBot.jpg"
 import NauticaQuestBot from "./NauticaQuestBot.jpg"
+import Cybertron_Logo from "./Cybertron_Logo.png"
+import Cyberfest_Logo from './Cyberfest_Logo.png'
+import Cybertron_banner from "./Cybertron_banner.jpg"
+import Tron_Robo from "./Tron_Robo.png"
+import Tron1 from "./Tron1.png"
+import Tron2 from './Tron2.png'
+import Tron3 from "./Tron3.png"
+import Tron4 from "./Tron4.png"
+import DV1 from "./DV1.png"
+import DV2 from "./DV2.png"
+import DV3 from "./DV3.png"
+import DV4 from "./DV4.png"
+import DV5 from "./DV5.png"
+import DV6 from "./DV6.png"
+import Fest1Banner from "./Fest1Banner.jpg"
+import Fest1 from "./Fest1.jpg"
+import Fest2 from "./Fest2.jpg"
+import Fest3 from "./Fest3.jpg"
+import Fest4 from "./Fest4.jpg"
+
 
 
 
@@ -104,6 +124,25 @@ import NauticaQuestBot from "./NauticaQuestBot.jpg"
 
 
 export const assets={
+    Fest1,
+    Fest2,
+    Fest3,
+    Fest4,
+    Fest1Banner,
+    DV1,
+    DV2,
+    DV3,
+    DV4,
+    DV5,
+    DV6,
+    Tron1,
+    Tron2,
+    Tron3,
+    Tron4,
+    Tron_Robo,
+    Cybertron_banner,
+    Cyberfest_Logo,
+    Cybertron_Logo,
     DragonVaultBot,
     NauticaQuestBot,
     Kakashi,

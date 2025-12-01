@@ -1,0 +1,217 @@
+/* PAGE BACKGROUND -------------------------------------------------- */
+.tron-faq-page {
+  background: #0a0a0a;
+  min-height: 100vh;
+  padding: 50px 20px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+}
+
+/* Scanline CRT overlay */
+.tron-faq-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+}
+
+/* TITLE -------------------------------------------------- */
+.tron-faq-title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #0ff;
+  text-shadow: 0 0 20px #00ffff;
+  margin-bottom: 40px;
+}
+
+/* FAQ WRAPPER -------------------------------------------------- */
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* FAQ ITEM -------------------------------------------------- */
+.faq-item {
+  position: relative;
+  background: #111;
+  border: 2px solid #0ff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px 26px;
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.25);
+
+  overflow: hidden; /* needed for beam */
+}
+
+/* Hover Glow */
+.faq-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 32px rgba(0, 255, 255, 0.7);
+}
+
+/* -------------------------------------------------- */
+/* 1. MEDIUM NEON PULSE WHEN OPENED — CYAN ONLY */
+/* -------------------------------------------------- */
+
+.faq-item.open {
+  animation: neonPulse 0.6s ease-out;
+  border-color: #0ff;
+}
+
+@keyframes neonPulse {
+  0% {
+    transform: scale(0.97);
+    box-shadow: 0 0 0 rgba(0, 255, 255, 0);
+    border-color: #00eaff;
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow:
+      0 0 26px rgba(0, 255, 255, 0.8),
+      0 0 36px rgba(0, 255, 255, 0.35);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 18px rgba(0, 255, 255, 0.45),
+      0 0 24px rgba(0, 255, 255, 0.25);
+  }
+}
+
+/* -------------------------------------------------- */
+/* 2. CENTER → OUTWARD LIGHT BEAM — CYAN ONLY */
+/* -------------------------------------------------- */
+
+.faq-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.15),
+    rgba(0, 255, 255, 0.35),
+    rgba(0, 255, 255, 0.15)
+  );
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    width 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.faq-item:hover::after,
+.faq-item.open::after {
+  width: 140%;
+  opacity: 1;
+}
+
+/* -------------------------------------------------- */
+/* 3. SUBTLE CYBER GLITCH — CYAN ONLY */
+/* -------------------------------------------------- */
+
+.faq-item.open .faq-question {
+  animation: glitchFlicker 0.4s steps(2, end);
+}
+
+@keyframes glitchFlicker {
+  0% { text-shadow: 2px 0 #0ff, -2px 0 #0ff; opacity: 0.8; }
+  40% { text-shadow: -1px 0 #0ff, 1px 0 #0ff; opacity: 0.6; }
+  70% { text-shadow: 1px 0 #0ff, -1px 0 #0ff; opacity: 1; }
+  100% { text-shadow: 0 0 10px #0ff; opacity: 1; }
+}
+
+/* -------------------------------------------------- */
+/* 4. STAGGERED SMOOTH ANSWER REVEAL */
+/* -------------------------------------------------- */
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-12px);
+
+  overflow: hidden;
+
+  transition:
+    max-height 0.55s cubic-bezier(0.25, 0.8, 0.25, 1),
+    opacity 0.45s ease,
+    transform 0.45s ease;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  padding-top: 12px;
+
+  animation: fadeSlide 0.45s ease-out;
+}
+
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* QUESTION ROW -------------------------------------------------- */
+.faq-question {
+  font-size: 1.35rem;
+  color: #0ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* ICON -------------------------------------------------- */
+.faq-icon {
+  font-size: 1.6rem;
+  font-weight: bold;
+  transition: transform 0.45s ease;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* ANSWER TEXT -------------------------------------------------- */
+.faq-answer p {
+  color: #ddd;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* RESPONSIVE -------------------------------------------------- */
+@media (max-width: 768px) {
+  .tron-faq-title {
+    font-size: 2.3rem;
+  }
+
+  .faq-question {
+    font-size: 1.15rem;
+  }
+
+  .faq-icon {
+    font-size: 1.4rem;
+  }
+}

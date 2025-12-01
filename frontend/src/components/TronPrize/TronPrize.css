@@ -1,0 +1,104 @@
+/* Background */
+.tron-prize-page {
+  background: #0a0a0a;
+  padding: 40px 20px 60px;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+/* Scan lines */
+.tron-prize-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+}
+
+/* Title */
+.tron-prize-title {
+  font-size: 3rem;
+  text-shadow: 0 0 20px #00ffff;
+  color: #0ff;
+  margin-bottom: 40px;
+}
+
+/* Prize Highlight Banner */
+.tron-prize-banner {
+  background: #111;
+  border: 3px solid #0ff;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+.glow-text {
+  font-size: 1.4rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.prize-amount {
+  font-size: 3rem;
+  margin-top: 5px;
+  color: #0ff;
+  text-shadow: 0 0 25px #00ffff;
+}
+
+/* Footer Note */
+.tron-prize-note {
+  margin-top: 25px;
+  color: #ccc;
+  font-size: 1rem;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tron-prize-title {
+    font-size: 2.3rem;
+  }
+
+  .prize-amount {
+    font-size: 2.4rem;
+  }
+}
+
+/* Pulse animation during counting */
+.pulse {
+  animation: pulseGlow 0.8s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    transform: scale(1);
+  }
+  to {
+    box-shadow: 0 0 45px rgba(0, 255, 255, 0.8);
+    transform: scale(1.02);
+  }
+}
+
+/* Flicker effect */
+.flicker {
+  animation: flickerAnim 0.15s linear;
+}
+
+@keyframes flickerAnim {
+  0% { opacity: 1; }
+  25% { opacity: 0.4; }
+  50% { opacity: 1; }
+  75% { opacity: 0.3; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,252 @@
+/* ================= DARK BACKGROUND ================= */
+.tron-dark-section {
+  background: #0d0d0d;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+/* ================= SCAN LINES ================= */
+.scan-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ================= LEFT BOX ================= */
+.tron-left-box {
+  z-index: 2;
+  text-align: left;
+}
+
+.tron-left-logo {
+  max-width: 180px;
+  width: 100%;
+  filter: drop-shadow(0 0 10px #0ff)
+          drop-shadow(0 0 20px #0ff)
+          drop-shadow(0 0 30px #0ff);
+  margin-bottom: 20px;
+}
+
+/* ================= TITLE ================= */
+.tron-left-title {
+  color: #0ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* ================= DESKTOP GLITCH ================= */
+.glitch {
+  position: relative;
+  color: #fff;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #0ff;
+  animation: glitch-skew 1.5s infinite linear alternate-reverse;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.glitch::before {
+  text-shadow: -2px 0 #f0f;
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  text-shadow: 2px 0 #0ff;
+  animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+/* ================= GLITCH KEYFRAMES (DESKTOP) ================= */
+@keyframes glitch-anim-1 {
+  0% { clip-path: inset(0 0 85% 0); }
+  20% { clip-path: inset(10% 0 40% 0); }
+  40% { clip-path: inset(60% 0 20% 0); }
+  60% { clip-path: inset(30% 0 60% 0); }
+  80% { clip-path: inset(80% 0 5% 0); }
+  100% { clip-path: inset(0 0 85% 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip-path: inset(80% 0 5% 0); }
+  20% { clip-path: inset(0 0 60% 0); }
+  40% { clip-path: inset(40% 0 20% 0); }
+  60% { clip-path: inset(10% 0 40% 0); }
+  80% { clip-path: inset(20% 0 60% 0); }
+  100% { clip-path: inset(80% 0 5% 0); }
+}
+
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  20% { transform: skew(2deg); }
+  40% { transform: skew(-2deg); }
+  60% { transform: skew(3deg); }
+  80% { transform: skew(-3deg); }
+  100% { transform: skew(0deg); }
+}
+
+/* ================= DESCRIPTION ================= */
+.tron-left-desc {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.neon-text {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* ================= BUTTON ================= */
+.tron-left-btn {
+  background: #0ff;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.tron-left-btn:hover {
+  background: #00cfcf;
+}
+
+/* ================= RIGHT IMAGE ================= */
+.tron-right-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tron-right-box::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.4) 0%,
+    rgba(0, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  filter: blur(40px);
+  animation: halo-pulse 2s ease-in-out infinite alternate;
+}
+
+.tron-right-image {
+  max-width: 100%;
+  filter: drop-shadow(0 0 20px #0ff);
+}
+
+.floating-robot {
+  animation: float-robot 4s ease-in-out infinite,
+             neon-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes float-robot {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes neon-glow {
+  0% { filter: drop-shadow(0 0 10px #0ff); }
+  50% { filter: drop-shadow(0 0 40px #0ff); }
+  100% { filter: drop-shadow(0 0 10px #0ff); }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .tron-left-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* ===========================================================
+   ============ MOBILE + TABLET SAFE GLITCH ===================
+   ===========================================================*/
+@media (max-width: 992px) {
+
+  .glitch {
+    position: relative;
+    font-size: 2rem;
+    text-shadow: none; 
+  }
+
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+  }
+
+  /* Magenta layer */
+  .glitch::before {
+    color: #ff00ff;
+    animation: glitch-mobile-before 1.8s infinite linear alternate-reverse;
+  }
+
+  /* Cyan layer */
+  .glitch::after {
+    color: #00ffff;
+    animation: glitch-mobile-after 1.8s infinite linear alternate-reverse;
+  }
+}
+
+/* ========= BUG-FREE MOBILE GLITCH KEYFRAMES (NO TRANSFORM!) ========= */
+@keyframes glitch-mobile-before {
+  0% { opacity: 0.3; left: -1px; }
+  20% { opacity: 0.6; left: 1px; }
+  40% { opacity: 0.4; left: -2px; }
+  60% { opacity: 0.25; left: 2px; }
+  80% { opacity: 0.3; left: -1px; }
+  100% { opacity: 0.5; left: 1px; }
+}
+
+@keyframes glitch-mobile-after {
+  0% { opacity: 0.4; left: 1px; }
+  20% { opacity: 0.7; left: -1px; }
+  40% { opacity: 0.5; left: 2px; }
+  60% { opacity: 0.3; left: -2px; }
+  80% { opacity: 0.6; left: 1px; }
+  100% { opacity: 0.4; left: -1px; }
+}
+
+/* ================= EXTRA MOBILE TWEAKS ================= */
+@media (max-width: 480px) {
+  .glitch {
+    font-size: 1.6rem;
+  }
+  .tron-left-desc {
+    font-size: 1rem;
+  }
+  .tron-left-logo {
+    max-width: 150px;
+  }
+}

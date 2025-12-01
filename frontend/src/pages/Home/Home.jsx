@@ -8,17 +8,15 @@ import Home5 from '../../components/Home5/Home5'
 import Home6 from '../../components/Home6/Home6'
 import Home02 from '../../components/Home02/Home02'
 import OfferBanner from '../../components/OfferBanner'
-import EventHome from '../../components/EventHome/EventHome'
 
 const Home = () => {
   return (
     <div>
       {/* <SocialMedia/> */}
         {/* <Navbar/> */}
-        <OfferBanner/>
+        {/* <OfferBanner/> */}
         <Home1/>
         <Home02/>
-        <EventHome/>
         <Home2/>
         <Home3/>
         <Home4/>

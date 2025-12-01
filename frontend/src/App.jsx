@@ -32,12 +32,18 @@ import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import AdminRoute from './routes/AdminRoute';
 import NotFound from './pages/NotFound';
-import Event from './pages/Event/Event';
+// import Event from './pages/Event/Event';
 import CyberChan from './components/CyberChan/CyberChan';
 import EventRegistration from './components/EventRegistration/EventRegistration';
 import ZoneDetails from './components/ZoneDetails';
 import DragonBallVault from './components/DragonBallVault/DragonBallVault';
 import NauticaQuest from './components/NauticaQuest/NauticaQuest';
+import EventCat from './components/EventCat/EventCat';
+import Cyberflix from './pages/Cyberflix/Cyberflix';
+import Cyberfest from './pages/Cyberfest/Cyberfest';
+import Cybertron from './pages/Cybertron/Cybertron';
+import TronDetails from './components/TronDetails/TronDetails';
+import FestDetails from './components/FestDetails/FestDetails';
 
 
 
@@ -50,9 +56,9 @@ const App = () => {
         {/* <Route path="/admin" element={<AdminPanel />} /> */}
 
         <Route path="/admin" element={
-  <AdminRoute>
-    <AdminPanel />
-  </AdminRoute>
+        <AdminRoute>
+         <AdminPanel />
+        </AdminRoute>
 } />
         <Route path="/career" element={<Careers />} />
         <Route path="/courses" element={<Courses />} />
@@ -61,7 +67,7 @@ const App = () => {
         <Route path="/courses/:courseName" element={<CourseDetails />} /> 
         <Route path="/enroll/:courseName" element={<CourseForm />} /> 
         <Route path="/blog" element={<Blogs/>} />
-        <Route path="/events" element={<Event />} />
+        <Route path="/events" element={<EventCat />} />
         <Route path="/zone-details" element={<ZoneDetails />} />
         <Route path="/login" element={<ComingSoon />} />
         <Route path="/apply" element={<CareerApplicationForm />} />
@@ -80,10 +86,15 @@ const App = () => {
         <Route path="/register" element={<EventRegistration />} />
         <Route path="/dbv" element={<DragonBallVault />} />
         <Route path="/nq" element={<NauticaQuest />} />
+        <Route path="/cyberflix" element={<Cyberflix />} />
+        <Route path="/cyberfest" element={<Cyberfest />} />
+        <Route path="/cybertron" element={<Cybertron />} />
+        <Route path="/fest/:slug" element={<FestDetails />} />
+<Route path="/tron/:slug" element={<TronDetails />} />
         <Route path="*" element={<NotFound />} />
 
       </Routes>
-      <CyberChan/>
+      {/* <CyberChan/> */}
       <Footer />
     </Router>
   );

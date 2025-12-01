@@ -1,6 +1,6 @@
 import { assets } from "../assets/assets";
 
-export const eventData = [
+export const festData = [
   {
     category: "Grades 3–5",
     zones: [
@@ -10,8 +10,9 @@ export const eventData = [
         detailImage: assets.Naruto,
         play: "Individual Player",
         handbook: assets.LuminaForgePDF,
+        registerLink: "https://forms.gle/lumina-forge-temp",
         backstory:
-          "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, Emergency button,Fertilizer activation, DPDT bot parking gates—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
+          "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, water pumps, gates—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
         objective:
           "Navigate the bot through the maze, complete Four electrical and mechanical challenges, collect all flags, and return to the central monument to press the buzzer.",
         arenaOverview:
@@ -32,16 +33,10 @@ export const eventData = [
             reward: "1 Flag",
           },
           {
-            name: "Emergency Button",
-            type: "Touch sensor & Buzzer",
-            description: "Connect the wires and touch the sensor",
+            name: "Water Source Repair",
+            type: "Potentiometer & Pump",
+            description: "Tune potentiometers to start the water pump.",
             reward: "1 Flag",
-          },
-          {
-            name:"Fertilizer Activation",
-            type:"Mist maker and Limit Switch",
-            description:"Hit the limit switch with the bot and activate the fertilizer",
-            reward:"1 Flag"
           },
           {
             name: "DPDT Parking",
@@ -71,8 +66,8 @@ export const eventData = [
           scoring: [
             { task: "Street Light Revival", points: 10 },
             { task: "Windmill Activation", points: 10 },
-            { task: "Emergency Button", points: 10 },
-            { task: "Fertilizer Activation", points: 10 },
+            { task: "Water Source Repair", points: 10 },
+            { task: "Security Gate Fix", points: 10 },
             { task: "DPDT Parking", points: 10 },
             {
               bonus: "Fastest completion +5",
@@ -101,6 +96,9 @@ export const eventData = [
         detailImage: assets.Dragonball,
         play: "Team of 2 (Collector & Snatcher)",
         handbook: assets.DragonVaultPDF,
+        registerLink: "https://forms.gle/dragon-vault-temp",
+purchaseLink: "https://forms.gle/purchase-dragon-vault-temp",
+
         backstory:
           "The Dragon Balls, once protecting the land, have been scattered by a powerful villain. Teams of Collector & Snatcher must retrieve the Dragon Balls, outwit opponents, and restore peace.",
         objective:
@@ -122,10 +120,12 @@ export const eventData = [
           conduct: [
             "Start only on referee’s signal",
             "Touching bot outside rules = –10 pts",
-            "Hitting the wall = -20s",
+            "Crossing boundaries = -20s",
+            "Skipping coins/hurdles = 0 pts",
           ],
           scoring: [
             { task: "Metal Coin", points: 10 },
+            { task: "Fake Coin", points: -5 },
             { task: "Bomb Coin", points: -10 },
             { task: "Bonus Clearing All Coins", points: 20 },
           ],
@@ -156,19 +156,22 @@ export const eventData = [
         detailImage: assets.Onepiece,
         play: "Team of 2",
         handbook: assets.NauticaQuestPDF,
+        registerLink: "https://forms.gle/nautica-quest-temp",
+purchaseLink: "https://forms.gle/purchase-nautica-quest-temp",
+
         backstory:
-          "Set sail into the Grand Line! The world’s oceans are in chaos after the mysterious appearance of cursed Spirit Fruit across the islands. Each island represents the legacy of a Straw Hat Pirate — a test of creativity, control, and courage. Your mission: journey through perilous terrains, face mechanical challenges, and defuse the Big Devil Fruit Bomb before time runs out.",
+          "Set sail into the Grand Line! The world’s oceans are in chaos after the mysterious appearance of cursed Devil Fruits across the islands. Each island represents the legacy of a Straw Hat Pirate — a test of creativity, control, and courage. Your mission: journey through perilous terrains, face mechanical challenges, and defuse the Big Devil Fruit Bomb before time runs out.",
         objective:
-          "Teams must navigate through five mechanical and sensor-based island challenges, collecting sequence code and defusing the Big Spirit Fruit at the final island (Raftel).",
+          "Teams must navigate through five mechanical and sensor-based island challenges, collecting clues and defusing the Big Devil Fruit Bomb at the final island (Raftel).",
         arenaOverview:
           "Five themed islands arranged sequentially, each featuring unique mechanics like rotating tunnels, moving bridges.",
         gameFlow:
-          "1. Prelims: Each player controls a bot through assigned islands.\n2. Complete your island challenge and defuse the Spirit Fruit by pressing the limit switch.\n3. Green LED indicates completion.\n4. Advance to Raftel and defuse the Spirit Fruit Bomb.\n5. Finale: Complete all islands again; decode and input the correct button sequence to defuse the Spirit Fruit.\n6. Incorrect sequence triggers a 20-second penalty.\n7. Complete within 10 minutes to qualify.",
+          "1. Prelims: Each player controls a bot through assigned islands.\n2. Complete your island challenge and defuse the Devil Fruit by pressing the limit switch.\n3. Green LED indicates completion.\n4. Advance to Raftel and defuse the Big Devil Fruit Bomb.\n5. Finale: Complete all islands again; decode and input the correct button sequence to defuse the bomb.\n6. Incorrect sequence triggers a 20-second penalty.\n7. Complete within 10 minutes to qualify.\n8. Half-time role swap",
         rules: {
           participation: [
             "Open to Grades 6–8 only.",
             "Team of 2 members.",
-            "Approved bots only (Wireless control).",
+            "Approved bots only (Bluetooth control).",
             "Each player controls one bot.",
             "No external help or substitutions allowed.",
             "Round 1- 10 Minutes",
@@ -176,15 +179,16 @@ export const eventData = [
           ],
           conduct: [
             "Start only after referee’s signal.",
-            "Touching/repositioning bot = –10 points.",
+            "Touching/repositioning bot = –10 coins.",
             "Crossing island boundary = -20s penalty.",
+            "Skipping island or incomplete task = 0 coins.",
             "Time continues even if bot malfunctions.",
             "One restart allowed (prelims only).",
             "Judges’ decisions final.",
           ],
           scoring: [
             { task: "Island Completion", points: 20 },
-            { task: "Big Spirit Fruit Defusal", points: 50 },
+            { task: "Big Devil Fruit Bomb Defusal", points: 50 },
             {
               bonus: "Fastest completion +10",
               penalty: "Touch –10 | Boundary -20s | Wrong sequence -20s",
@@ -193,7 +197,7 @@ export const eventData = [
           ],
           judging: [
             "Accuracy in completing mechanical/sensor challenges.",
-            "Smooth Wireless control and navigation.",
+            "Smooth Bluetooth control and navigation.",
             "Correct sequence execution on final island.",
             "Team coordination and communication.",
             "Safety and rule adherence.",
@@ -218,12 +222,14 @@ export const eventData = [
         detailImage: assets.Students,
         play: "Team of 5",
         handbook: assets.NexathonPDF,
+        registerLink: "https://forms.gle/nexathon-temp",
+
         backstory:
           "In the futuristic world of NEXA, robotics governs every sector—from industry to defense. But a massive system failure has corrupted all automation codes. To bring the world back online, young engineers must rebuild circuits, trace the right components, and reactivate control through logic-based coding.",
         objective:
-          "Teams must complete two rounds — first by soldering a working circuit, then identifying and integrating components to build a functional solution for the given problem statement with internet access.",
+          "Teams must complete two rounds — first by soldering a working circuit, then identifying and integrating components to build a functional robotic model with internet access.",
         arenaOverview:
-          "Round 1: Soldering Rush – All member of the team will assemble and test circuits.\nRound 2: NexaThon Finale – Teams identify, connect, and activate functional models through component and code integration.",
+          "Round 1: Soldering Rush – A member of the team will assemble and test circuits.\nRound 2: NexaThon Finale – Teams identify, connect, and activate functional models through code integration.",
         gameFlow:
           "1. Round 1: Assemble and solder working circuit.\n2. Top teams qualify for Round 2.\n3. Identify and connect correct components on kit.\n4. Correct connection reveals code snippet.\n5. Integrate all code snippets.\n6. Demonstrate working model and explain logic.",
         rules: {
@@ -240,14 +246,14 @@ export const eventData = [
             "Wrong connection = no code + 30s penalty.",
             "Unsafe circuit handling = disqualification.",
             "Teamwork and discipline mandatory.",
-            "Judges decision final.",
+            "Judges’ decision final.",
           ],
           scoring: [
             { task: "Round 1 Completion", points: 50 },
             { task: "Round 2 Completion", points: 100 },
             {
-              bonus: "Zero errors +5 Points",
-              penalty: "Wrong connection +30s | Unsafe handling -10 Points",
+              bonus: "Zero errors +5",
+              penalty: "Wrong connection +30s | Unsafe handling -10",
             },
           ],
           judging: [
