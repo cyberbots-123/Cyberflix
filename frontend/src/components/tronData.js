@@ -10,6 +10,8 @@ export const tronData = [
         detailImage: assets.Naruto,
         play: "Individual Player",
         handbook: assets.LuminaForgePDF,
+        registerLink: "https://forms.gle/5nDKSRXXUpMHHQh47",
+  purchaseLink: null,
         backstory:
           "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, water pumps, gates—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
         objective:
@@ -95,6 +97,8 @@ export const tronData = [
         detailImage: assets.Dragonball,
         play: "Team of 2 (Collector & Snatcher)",
         handbook: assets.DragonVaultPDF,
+        registerLink: "https://forms.gle/5nDKSRXXUpMHHQh47",
+  purchaseLink: "https://forms.gle/9Nvs5E257MfKGwvL7",
         backstory:
           "The Dragon Balls, once protecting the land, have been scattered by a powerful villain. Teams of Collector & Snatcher must retrieve the Dragon Balls, outwit opponents, and restore peace.",
         objective:
@@ -152,6 +156,8 @@ export const tronData = [
         detailImage: assets.Onepiece,
         play: "Team of 2",
         handbook: assets.NauticaQuestPDF,
+        registerLink: "https://forms.gle/5nDKSRXXUpMHHQh47",
+  purchaseLink: "https://forms.gle/z8CDm6pV541m6Ewq9",
         backstory:
           "Set sail into the Grand Line! The world’s oceans are in chaos after the mysterious appearance of cursed Devil Fruits across the islands. Each island represents the legacy of a Straw Hat Pirate — a test of creativity, control, and courage. Your mission: journey through perilous terrains, face mechanical challenges, and defuse the Big Devil Fruit Bomb before time runs out.",
         objective:
@@ -215,6 +221,8 @@ export const tronData = [
         detailImage: assets.Students,
         play: "Team of 5",
         handbook: assets.NexathonPDF,
+        registerLink: "https://forms.gle/s7zQUdAyzMKhLPJc7",
+  purchaseLink: null,
         backstory:
           "In the futuristic world of NEXA, robotics governs every sector—from industry to defense. But a massive system failure has corrupted all automation codes. To bring the world back online, young engineers must rebuild circuits, trace the right components, and reactivate control through logic-based coding.",
         objective:

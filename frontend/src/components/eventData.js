@@ -10,6 +10,8 @@ export const eventData = [
         detailImage: assets.Naruto,
         play: "Individual Player",
         handbook: assets.LuminaForgePDF,
+        registrationLink:"https://forms.gle/DPLzPAKAaVYTnHLWA",
+        purchaseLink: null,
         backstory:
           "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, Emergency button,Fertilizer activation, DPDT bot parking gates—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
         objective:
@@ -101,6 +103,8 @@ export const eventData = [
         detailImage: assets.Dragonball,
         play: "Team of 2 (Collector & Snatcher)",
         handbook: assets.DragonVaultPDF,
+        registrationLink:"https://forms.gle/DPLzPAKAaVYTnHLWA",
+        purchaseLink: "https://forms.gle/DfaQkUrjoxv7gRRZ9",
         backstory:
           "The Dragon Balls, once protecting the land, have been scattered by a powerful villain. Teams of Collector & Snatcher must retrieve the Dragon Balls, outwit opponents, and restore peace.",
         objective:
@@ -156,6 +160,8 @@ export const eventData = [
         detailImage: assets.Onepiece,
         play: "Team of 2",
         handbook: assets.NauticaQuestPDF,
+        registrationLink:"https://forms.gle/DPLzPAKAaVYTnHLWA",
+        purchaseLink: "https://forms.gle/CuWA7A65Lc9iP5WXA",
         backstory:
           "Set sail into the Grand Line! The world’s oceans are in chaos after the mysterious appearance of cursed Spirit Fruit across the islands. Each island represents the legacy of a Straw Hat Pirate — a test of creativity, control, and courage. Your mission: journey through perilous terrains, face mechanical challenges, and defuse the Big Devil Fruit Bomb before time runs out.",
         objective:
@@ -218,6 +224,8 @@ export const eventData = [
         detailImage: assets.Students,
         play: "Team of 5",
         handbook: assets.NexathonPDF,
+        registrationLink:"https://forms.gle/4cqChAXRoptn1tCd8",
+        purchaseLink: null,
         backstory:
           "In the futuristic world of NEXA, robotics governs every sector—from industry to defense. But a massive system failure has corrupted all automation codes. To bring the world back online, young engineers must rebuild circuits, trace the right components, and reactivate control through logic-based coding.",
         objective:

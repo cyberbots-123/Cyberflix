@@ -60,16 +60,15 @@ const EventH = () => {
             </p>
 
             {/* Register Button opens Google Form */}
-            <a
-              href="https://docs.google.com/forms/d/1MCW2VkkbIeub7JzScvNr2595juP_Smqinrv7VbQ3uzg/edit"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-outline-light btn-lg px-4 register-btn"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              Register Now
-            </a>
+            <button
+  className="btn btn-outline-light btn-lg px-4 register-btn"
+  onClick={() => {
+    document.getElementById("event-zones").scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  Register Now
+</button>
+
           </div>
 
           {/* Right Empty Column (desktop only for spacing) */}

@@ -19,8 +19,8 @@ const FestDetails = () => {
   // Recalculate correct slug from event name
   const eventSlug = selectedEvent.name.toLowerCase().replace(/\s+/g, "-");
 
-  // Events that should show "Purchase Your Robot"
-  const purchaseZones = ["dragon-vault", "nautica-quest"];
+  // Events that should show Purchase Your Robot
+  const purchaseZones = ["treasure-clash", "grand-island-quest"];
   const showPurchase = purchaseZones.includes(eventSlug);
 
   // Floating shapes effect
@@ -71,7 +71,7 @@ const FestDetails = () => {
           <h1>{selectedEvent.name}</h1>
 
           <div className="festdetails-header-buttons">
-            {/* Register Now (Top) */}
+            {/* Register Now */}
             {selectedEvent.registerLink && (
               <a
                 href={selectedEvent.registerLink}
@@ -83,7 +83,7 @@ const FestDetails = () => {
               </a>
             )}
 
-            {/* Purchase Your Robot (Top) */}
+            {/* Purchase Your Robot */}
             {showPurchase && selectedEvent.purchaseLink && (
               <a
                 href={selectedEvent.purchaseLink}
@@ -123,7 +123,7 @@ const FestDetails = () => {
         <p>{selectedEvent.objective}</p>
       </div>
 
-      {/* Arena */}
+      {/* Arena Overview */}
       <div className="festdetails-card">
         <h2>Arena Overview</h2>
         <pre>{selectedEvent.arenaOverview}</pre>
@@ -139,7 +139,6 @@ const FestDetails = () => {
       <div className="festdetails-card">
         <h2>Rules</h2>
 
-        {/* Participation */}
         <div className="festdetails-rule-group">
           <h3>Participation</h3>
           <ul>
@@ -149,7 +148,6 @@ const FestDetails = () => {
           </ul>
         </div>
 
-        {/* Conduct */}
         <div className="festdetails-rule-group">
           <h3>Conduct</h3>
           <ul>
@@ -159,7 +157,6 @@ const FestDetails = () => {
           </ul>
         </div>
 
-        {/* Scoring */}
         <div className="festdetails-rule-group">
           <h3>Scoring</h3>
           <ul>
@@ -174,7 +171,6 @@ const FestDetails = () => {
           </ul>
         </div>
 
-        {/* Judging */}
         <div className="festdetails-rule-group">
           <h3>Judging Criteria</h3>
           <ul>
@@ -184,7 +180,6 @@ const FestDetails = () => {
           </ul>
         </div>
 
-        {/* Safety */}
         <div className="festdetails-rule-group">
           <h3>Safety</h3>
           <ul>
@@ -197,7 +192,6 @@ const FestDetails = () => {
 
       {/* Bottom Buttons */}
       <div className="festdetails-bottom-buttons">
-        {/* Register Now (Bottom) */}
         {selectedEvent.registerLink && (
           <a
             href={selectedEvent.registerLink}
@@ -209,7 +203,6 @@ const FestDetails = () => {
           </a>
         )}
 
-        {/* Purchase (Bottom) */}
         {showPurchase && selectedEvent.purchaseLink && (
           <a
             href={selectedEvent.purchaseLink}

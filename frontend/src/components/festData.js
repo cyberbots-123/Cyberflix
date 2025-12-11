@@ -5,18 +5,18 @@ export const festData = [
     category: "Grades 3–5",
     zones: [
       {
-        name: "LUMINA FORGE",
+        name: "CIRCUIT QUEST",
         image: assets.Zone1A,
         detailImage: assets.Naruto,
         play: "Individual Player",
         handbook: assets.LuminaForgePDF,
-        registerLink: "https://forms.gle/lumina-forge-temp",
+        registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSei5Sw3pSPES8Lmfr5i-zKpDlRKUyg9fkrLmOO_3-XBU_zYyQ/viewform",
         backstory:
-          "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, water pumps, gates—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
+          "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, emergency buzzer alert system, fertilizer spraying—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
         objective:
-          "Navigate the bot through the maze, complete Four electrical and mechanical challenges, collect all flags, and return to the central monument to press the buzzer.",
+          "Use your DPDT bot to restore the Hidden Village by completing each task in sequence and collecting all flags within the given time.",
         arenaOverview:
-          "- Leaf-shaped challenge zones around a central Hokage Monument.\n- Each zone presents one electrical or mechanical hurdle and one flag.\n- Central monument lights up once all flags are inserted.",
+          "- The arena is a circular Naruto-inspired maze modeled after the Hidden Leaf Village pathways.\n- Two green starting lanes guide participants into a fiery circular track.\n- The circular path contains four circuit-based hurdles that must be completed in a fixed sequence.\n - Each hurdle serves as a checkpoint where players must collect a flag before moving forward.\n - After collecting all flags, players proceed to the finish area known as the Hokage Zone. \n - In the Hokage Zone, Players hoist all their collected flags onto the monument frame. \n - Pressing the final buzzer activities the central monument, signaling completion of the challenge.",
         challenges: [
           {
             name: "Street Light Revival",
@@ -53,8 +53,8 @@ export const festData = [
             "Open to Grades 3–5 only.",
             "Each participant operates individually—no external assistance.",
             "Pre-round inspection mandatory.",
-            "Round-1 10 Minutes",
-            "Round-2 7 Minutes"
+            "Round-1 (10 Minutes).",
+            "Round-2 (7 Minutes)."
           ],
           conduct: [
             "Gameplay begins after referee’s start signal.",
@@ -91,13 +91,13 @@ export const festData = [
         },
       },
       {
-        name: "DRAGON VAULT",
+        name: "TREASURE CLASH",
         image: assets.Zone1B,
         detailImage: assets.Dragonball,
         play: "Team of 2 (Collector & Snatcher)",
         handbook: assets.DragonVaultPDF,
-        registerLink: "https://forms.gle/dragon-vault-temp",
-purchaseLink: "https://forms.gle/purchase-dragon-vault-temp",
+        registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSei5Sw3pSPES8Lmfr5i-zKpDlRKUyg9fkrLmOO_3-XBU_zYyQ/viewform",
+purchaseLink: "https://docs.google.com/forms/d/e/1FAIpQLSfXFsFXmSqIkjZRDGBn1jmePVylVgGPErcm6RMrDYMFZQexrA/viewform?usp=publish-editor",
 
         backstory:
           "The Dragon Balls, once protecting the land, have been scattered by a powerful villain. Teams of Collector & Snatcher must retrieve the Dragon Balls, outwit opponents, and restore peace.",
@@ -151,13 +151,13 @@ purchaseLink: "https://forms.gle/purchase-dragon-vault-temp",
     category: "Grades 6–8",
     zones: [
       {
-        name: "NAUTICA QUEST",
+        name: "GRAND ISLAND QUEST",
         image: assets.Zone2,
         detailImage: assets.Onepiece,
         play: "Team of 2",
         handbook: assets.NauticaQuestPDF,
-        registerLink: "https://forms.gle/nautica-quest-temp",
-purchaseLink: "https://forms.gle/purchase-nautica-quest-temp",
+        registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSei5Sw3pSPES8Lmfr5i-zKpDlRKUyg9fkrLmOO_3-XBU_zYyQ/viewform",
+purchaseLink: "https://docs.google.com/forms/d/e/1FAIpQLSeJ_cvJWwQcsf8KUmZjKSmSngbZB_ECapgy87oKOcU1mNEo4g/viewform?usp=dialog",
 
         backstory:
           "Set sail into the Grand Line! The world’s oceans are in chaos after the mysterious appearance of cursed Devil Fruits across the islands. Each island represents the legacy of a Straw Hat Pirate — a test of creativity, control, and courage. Your mission: journey through perilous terrains, face mechanical challenges, and defuse the Big Devil Fruit Bomb before time runs out.",
@@ -222,7 +222,7 @@ purchaseLink: "https://forms.gle/purchase-nautica-quest-temp",
         detailImage: assets.Students,
         play: "Team of 5",
         handbook: assets.NexathonPDF,
-        registerLink: "https://forms.gle/nexathon-temp",
+        registerLink: "https://docs.google.com/forms/d/e/1FAIpQLSewNExavW2ffGxmOy50uWB2XCkcfPYqfGMPzxmBTwVsbVf7Tg/viewform",
 
         backstory:
           "In the futuristic world of NEXA, robotics governs every sector—from industry to defense. But a massive system failure has corrupted all automation codes. To bring the world back online, young engineers must rebuild circuits, trace the right components, and reactivate control through logic-based coding.",

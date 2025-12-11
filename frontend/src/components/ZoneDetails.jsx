@@ -194,12 +194,7 @@ const ZoneDetails = () => {
               boxShadow: "0 0 15px #ff4081, 0 0 25px #00e5ff",
             },
           }}
-          onClick={() =>
-            window.open(
-              "https://docs.google.com/forms/d/1MCW2VkkbIeub7JzScvNr2595juP_Smqinrv7VbQ3uzg/edit",
-              "_blank"
-            )
-          }
+          onClick={() => window.open(zone.registrationLink, "_blank")}
         >
           Register Now
         </Button>
@@ -222,18 +217,7 @@ const ZoneDetails = () => {
                 boxShadow: "0 0 15px #00e5ff, 0 0 25px #ff4081",
               },
             }}
-            onClick={() => {
-              if (zone.name === "DRAGON VAULT")
-                window.open(
-                  "https://docs.google.com/forms/d/15LZ6cJSJ4oFrIJZBdJzjFUQG7d-QW3ZL9ojzrKwtw48/edit",
-                  "_blank"
-                );
-              else if (zone.name === "NAUTICA QUEST")
-                window.open(
-                  "https://docs.google.com/forms/d/1WOGE64Tr-wrc4kuo9X-90VVQlJmJP8YYnBbus6zpg64/edit",
-                  "_blank"
-                );
-            }}
+            onClick={() => window.open(zone.purchaseLink, "_blank")}
           >
             Purchase Your Robot
           </Button>
@@ -540,12 +524,8 @@ const ZoneDetails = () => {
         boxShadow: "0 0 15px #ff4081, 0 0 25px #00e5ff",
       },
     }}
-    onClick={() =>
-      window.open(
-        "https://docs.google.com/forms/d/1MCW2VkkbIeub7JzScvNr2595juP_Smqinrv7VbQ3uzg/edit",
-        "_blank"
-      )
-    }
+    onClick={() => window.open(zone.registrationLink, "_blank")}
+
   >
     Register Now
   </Button>
@@ -568,18 +548,8 @@ const ZoneDetails = () => {
           boxShadow: "0 0 15px #00e5ff, 0 0 25px #ff4081",
         },
       }}
-      onClick={() => {
-        if (zone.name === "DRAGON VAULT")
-          window.open(
-            "https://docs.google.com/forms/d/15LZ6cJSJ4oFrIJZBdJzjFUQG7d-QW3ZL9ojzrKwtw48/edit",
-            "_blank"
-          );
-        else if (zone.name === "NAUTICA QUEST")
-          window.open(
-            "https://docs.google.com/forms/d/1WOGE64Tr-wrc4kuo9X-90VVQlJmJP8YYnBbus6zpg64/edit",
-            "_blank"
-          );
-      }}
+      onClick={() => window.open(zone.purchaseLink, "_blank")}
+
     >
       Purchase Your Robot
     </Button>

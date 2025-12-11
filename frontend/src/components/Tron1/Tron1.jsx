@@ -35,15 +35,16 @@ const Tron1 = () => {
               and rise as the ultimate innovator.
             </p>
 
-            <a
-              href="https://docs.google.com/forms/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="tron-left-btn"
-            >
-              Register Now
-              <span className="btn-ripple"></span>
-            </a>
+            <button
+  className="tron-left-btn"
+  onClick={() => {
+    document.getElementById("tron3-section")
+      .scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  Register Now <span className="btn-ripple"></span>
+</button>
+
           </div>
 
           {/* RIGHT SECTION */}

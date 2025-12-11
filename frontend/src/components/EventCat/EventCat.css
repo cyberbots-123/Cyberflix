@@ -52,7 +52,8 @@
 .cyber-sub {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* Grid */

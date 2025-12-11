@@ -9,7 +9,10 @@ const Cybertron = () => {
     <>
     <Tron1/>
     <TronPrize/>
-    <Tron3/>
+    {/* <Tron3/> */}
+    <div id="tron3-section">
+        <Tron3/>
+      </div>
     <TronFAQ/>
     </>
   )

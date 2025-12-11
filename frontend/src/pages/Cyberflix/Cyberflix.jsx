@@ -8,7 +8,10 @@ const Cyberflix = () => {
     <>
     <EventH/>
      <PrizesAndCategories/>
-    <EventZones/>
+    {/* <EventZones/> */}
+    <div id="event-zones">
+    <EventZones />
+  </div>
     </>
   )
 }

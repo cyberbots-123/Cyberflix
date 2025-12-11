@@ -12,15 +12,15 @@ const Fest3 = () => {
   const gradeCards = {
     "Grade 3-5": [
       {
-        title: "Lumina Forge",
-        slug: "lumina-forge",
+        title: "CIRCUIT QUEST",
+        slug: "circuit-quest",
         description:
           "Once a radiant hub of innovation, the Hidden Village now lies in darkness after the Akatsuki’s devastating attack. Young engineers must pilot their NAVIGATION bots to restore essential systems—streetlights, windmills, water pumps, gates—and collect flags. Only the fastest and most precise will light the Hokage Monument and bring the village back to life.",
         image: assets.Fest1,
       },
       {
-        title: "Dragon Vault",
-        slug: "dragon-vault",
+        title: "TREASURE CLASH",
+        slug: "treasure-clash",
         description:
           "The Dragon Balls, once protecting the land, have been scattered by a powerful villain. Teams of Collector & Snatcher must retrieve the Dragon Balls, outwit opponents, and restore peace.",
         image: assets.Fest2,
@@ -28,8 +28,8 @@ const Fest3 = () => {
     ],
     "Grade 6-8": [
       {
-        title: "Nautica Quest",
-        slug: "nautica-quest",
+        title: "GRAND ISLAND QUEST",
+        slug: "grand-island-quest",
         description:
           "Set sail into the Grand Line! The world’s oceans are in chaos after the mysterious appearance of cursed Devil Fruits across the islands. Each island represents the legacy of a Straw Hat Pirate — a test of creativity, control, and courage. Your mission: journey through perilous terrains, face mechanical challenges, and defuse the Big Devil Fruit Bomb before time runs out.",
         image: assets.Fest3,
@@ -37,7 +37,7 @@ const Fest3 = () => {
     ],
     "Grade 9-12": [
       {
-        title: "Nexathon",
+        title: "NEXATHON",
         slug: "nexathon",
         description:
           "In the futuristic world of NEXA, robotics governs every sector—from industry to defense. But a massive system failure has corrupted all automation codes. To bring the world back online, young engineers must rebuild circuits, trace the right components, and reactivate control through logic-based coding.",

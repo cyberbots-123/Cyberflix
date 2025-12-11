@@ -26,8 +26,6 @@ const TronDetails = () => {
     );
   }
 
-  const purchaseZones = ["dragon-vault", "nautica-quest"];
-
   return (
     <div className="tron-details-page">
       {/* Header */}
@@ -44,34 +42,32 @@ const TronDetails = () => {
         />
       </div>
 
-
-
       {/* Register Now (Top) */}
       <div className="tron-register-box">
-        <a
-          href="https://example.com/register"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="tron-register-btn"
-        >
-          ⚡ Register Now
-        </a>
-
-        {purchaseZones.includes(slug) && (
-        <div className="tron-purchase-box bottom">
+        {selectedEvent.registerLink && (
           <a
-            href="https://example.com/purchase"
+            href={selectedEvent.registerLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="tron-purchase-btn"
+            className="tron-register-btn"
           >
-            🤖 Purchase Your Robot
+            ⚡ Register Now
           </a>
-        </div>
-      )}
-      </div>
+        )}
 
-      
+        {selectedEvent.purchaseLink && (
+          <div className="tron-purchase-box bottom">
+            <a
+              href={selectedEvent.purchaseLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="tron-purchase-btn"
+            >
+              🤖 Purchase Your Robot
+            </a>
+          </div>
+        )}
+      </div>
 
       {/* Play Mode & Handbook */}
       <div className="tron-quick-info">
@@ -175,22 +171,24 @@ const TronDetails = () => {
       </section>
 
       {/* Register Now (Bottom) */}
-      <div className="tron-register-box bottom">
-        <a
-          href="https://example.com/register"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="tron-register-btn"
-        >
-          ⚡ Register Now
-        </a>
-      </div>
+      {selectedEvent.registerLink && (
+        <div className="tron-register-box bottom">
+          <a
+            href={selectedEvent.registerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tron-register-btn"
+          >
+            ⚡ Register Now
+          </a>
+        </div>
+      )}
 
       {/* Purchase Robot (Bottom) */}
-      {purchaseZones.includes(slug) && (
+      {selectedEvent.purchaseLink && (
         <div className="tron-purchase-box bottom">
           <a
-            href="https://example.com/purchase"
+            href={selectedEvent.purchaseLink}
             target="_blank"
             rel="noopener noreferrer"
             className="tron-purchase-btn"

@@ -8,7 +8,10 @@ const Cyberfest = () => {
     <>
     <Fest1/>
     <Fest2/>
-    <Fest3/>
+    {/* <Fest3/> */}
+    <div id="fest3-section">
+        <Fest3/>
+      </div>
     </>
   )
 }

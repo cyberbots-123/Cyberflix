@@ -62,16 +62,18 @@ const Fest1 = () => {
               <span className="fest1-highlight"> exciting rewards</span>.
             </p>
 
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-outline-light btn-lg px-4 fest1-btn"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              Register Now
-            </a>
+            <button
+  className="btn btn-outline-light btn-lg px-4 fest1-btn"
+  data-aos="zoom-in"
+  data-aos-delay="600"
+  onClick={() => {
+    document.getElementById("fest3-section")
+      .scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  Register Now
+</button>
+
           </div>
 
         </div>
